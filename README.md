@@ -63,7 +63,6 @@ See [LICENSE](./LICENSE.md).
 
 For technical questions about or comments about this sample notebook, contact [NTIA-Performance & Data Analytics](mailto:nbam@ntia.gov)
 
----
 
 U.S. Department of Commerce | National Telecommunications and Information Administration (NTIA) | Office of Internet Connectivity and Growth (OICG) | Performance & Data Analytics 
 
