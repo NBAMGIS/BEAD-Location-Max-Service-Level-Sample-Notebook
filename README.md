@@ -47,4 +47,4 @@ See [LICENSE](./LICENSE.md).
 
 For technical questions about or comments about this sample notebook, contact [NTIA-Performance & Data Analytics](mailto:nbam@ntia.gov)
 
-Performance & Data Analytics | National Telecommunications and Information Administration | U.S. Department of Commerce
+Performance & Data Analytics | Office of Internet Connectivity and Growth (OICG) | National Telecommunications and Information Administration | U.S. Department of Commerce
