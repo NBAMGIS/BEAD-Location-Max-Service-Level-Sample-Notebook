@@ -12,9 +12,9 @@ This notebook provides an overview of the key methodology and criteria used by t
 
 ### View sample code in browser:
 
-1. [Code & documentation only](https://turbo-train-8kzmlge.pages.github.io/BEAD_Service_Level_Sample_Notebook_No_Output.html)
-1. [Notebook with results: Montana - BDC (07/25/23)](https://turbo-train-8kzmlge.pages.github.io/BEAD_Service_Level_Sample_Notebook(Montana).html)
-1. [Notebook with results: Pennsylvania - BDC (07/25/23)](https://turbo-train-8kzmlge.pages.github.io/BEAD_Service_Level_Sample_Notebook(Pennsylvania).html)
+1. [Code & documentation only](./BEAD_Service_Level_Sample_Notebook_No_Output.html)
+1. [Notebook with results: Montana - BDC (07/25/23)](./BEAD_Service_Level_Sample_Notebook(Montana).html)
+1. [Notebook with results: Pennsylvania - BDC (07/25/23)](./BEAD_Service_Level_Sample_Notebook(Pennsylvania).html)
 
 ## Notebook:
 
@@ -48,5 +48,3 @@ See [LICENSE](./LICENSE.md).
 For technical questions about or comments about this sample notebook, contact [NTIA-Performance & Data Analytics](mailto:nbam@ntia.gov)
 
 Performance & Data Analytics | National Telecommunications and Information Administration | U.S. Department of Commerce
-
-<img src="https://www.ntia.gov/themes/custom/ntia_uswds//img/NTIAlogo-official.svg" alt="NTIA Logo" width="50em" align="center">
