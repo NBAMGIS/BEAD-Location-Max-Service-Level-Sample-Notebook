@@ -18,7 +18,7 @@ This notebook provides an overview of the key methodology and criteria used by t
 
 ## Notebook:
 
-   - [**View on GitHub:** BEAD_Service_Level_Sample_Notebook.ipynb](https://github.com/NBAMGIS/BDC_Service_Levels_Python_Sample_Notebook/blob/main/BEAD_Service_Level_Sample_Notebook.ipynb)
+   - [**View on GitHub:** BEAD_Service_Level_Sample_Notebook.ipynb](https://github.com/NBAMGIS/BEAD-Location-Max-Service-Level-Sample-Notebook/blob/main/BEAD_Service_Level_Sample_Notebook.ipynb)
    - [**Download:** BEAD_Service_Level_Sample_Notebook.ipynb](./BEAD_Service_Level_Sample_Notebook.ipynb)
 
 ## Environment/Dependencies:
