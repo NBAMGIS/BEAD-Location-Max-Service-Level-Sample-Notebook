@@ -14653,7 +14653,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                             </ol>  
                         <li><a href="#sec_1_b">Location records</a></li>
                             <ol>
-                                <li><a href="#sec_1_b_1">Why does the BDC data must be joined to the Location Fabric?</a></li>  
+                                <li><a href="#sec_1_b_1">Why must the BDC data be joined to the Location Fabric?</a></li>  
                                 <li><a href="#sec_1_b_2">Why use the block_geoid column rather than the state column?</a></li>
                                 <li><a href="#sec_1_b_3">What is a Broadband Serviceable Location (BSL)?</a></li>
                             </ol>                
@@ -14758,7 +14758,7 @@ Section I.C.bb. of the NOFO defines unserved locations as locations lacking reli
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div style=" margin-left: 9em; font-size:1em;color:#303030;">
-Section I.C.cc. of the NOFO defines underserved locations as locations that are identified as having access to reliable broadband service of at least 25 Mbps downstream/3 Mbps upstream but less than 100 Mbps downstream/20 Mbps upstream at a latency of 100 milliseconds or less. Reliable broadband means broadband service that the Broadband 5 DATA Maps show is accessible to a location via fiber-optic technology; Cable Modem/ Hybrid fiber-coaxial technology; digital subscriber line technology; or terrestrial fixed wireless technology utilizing entirely licensed spectrum or using a hybrid of licensed and unlicensed spectrum. 
+Section I.C.cc. of the NOFO defines underserved locations as locations that are identified as having access to reliable broadband service of at least 25 Mbps downstream/3 Mbps upstream but less than 100 Mbps downstream/20 Mbps upstream at a latency of 100 milliseconds or less. Reliable broadband means broadband service that the Broadband DATA Maps show is accessible to a location via fiber-optic technology; Cable Modem/ Hybrid fiber-coaxial technology; digital subscriber line technology; or terrestrial fixed wireless technology utilizing entirely licensed spectrum or using a hybrid of licensed and unlicensed spectrum. 
 <a href=https://broadbandusa.ntia.gov/sites/default/files/2022-06/BEAD-FAQs.pdf>See BEAD FAQ’s</a>
 </div>
 
@@ -14903,7 +14903,7 @@ Section I.C.cc. of the NOFO defines underserved locations as locations that are 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="i.-Why-does-the-BDC-data-must-be-joined-to-the-Location-Fabric?"><em><span id="sec_1_b_1" style="margin-left: 6em; font-size:1.2em ;color:#2F5496;">i. Why does the BDC data must be joined to the Location Fabric?</span></em><a class="anchor-link" href="#i.-Why-does-the-BDC-data-must-be-joined-to-the-Location-Fabric?">&#182;</a></h5>
+<h5 id="i.-Why-does-the-BDC-data-must-be-joined-to-the-Location-Fabric?"><em><span id="sec_1_b_1" style="margin-left: 6em; font-size:1.2em ;color:#2F5496;">i. Why must the BDC data be joined to the Location Fabric?</span></em><a class="anchor-link" href="#i.-Why-does-the-BDC-data-must-be-joined-to-the-Location-Fabric?">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -15020,7 +15020,9 @@ Locations in the location fabric without corresponding service availability in B
         <ol>
             <li>Download and unzip the <a href="https://help.bdc.fcc.gov/hc/en-us/articles/6785010654235-How-Government-Entities-Can-Access-the-Production-Location-Fabric-">Location Fabric dataset</a> and take note of the full file path</li> 
             <li>Downlaod and place the <a href="https://broadbandmap.fcc.gov/data-download">Broadband Data Collection (BDC)</a> zipfiles in a separate directory without any other files. Take note of the full directory path.
-            <div><b>Note: The BDC CSV files should remain zipped for the code sample to work properly and for memory optimization.</b><br>&emsp;The sample code below will use all of the zipfiles in the directory as data sources.</div></li>
+            <div><b>Note: The BDC CSV files should remain zipped for the code sample to work properly and for memory optimization.</b><br>&emsp;The sample code below will use all of the zipfiles in the directory as data sources.
+			<br>&emsp;Ensure a file for each "reliable broadband" technology type is downloaded.  Reference the <a href="#sec_1_a_1_3">applied service level criteria</a> for a list of technology types.
+			</div></li>
         </ol>
         <li>Once the files are in place, adjust the analytic variables in the <a href="#sec_2_c">parameters</a> section.  Provide/update each path variable.</li>
         <li>Run the notebook with the updated variables.  Sample results will be displyed in the notebook while full results will be exported to csv files.</li>    
@@ -15246,7 +15248,7 @@ See the <a href="#sec_1_a_1_3">applied service level criteria</a> for more detai
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># Get the state FIPS code for the DBC files, the FIPS code will be used to query the location fabric</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Get the state FIPS code for the BDC files, the FIPS code will be used to query the location fabric</span>
 <span class="n">state_fips</span> <span class="o">=</span> <span class="n">zipped_csv_files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
@@ -15431,7 +15433,7 @@ See the <a href="#sec_1_a_1_3">applied service level criteria</a> for more detai
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># Some BSL&#39;s may not have an service level reported within the BDC data</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Some BSL&#39;s may not have a service level reported within the BDC data</span>
 <span class="c1"># Left join the Location Fabric BSL to the BDC dataset, Nulls will be labled as &quot;Unserved&quot;</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">state_loc_fab_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">bdc_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;location_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;_df2_&#39;</span><span class="p">))</span>
 
@@ -15504,7 +15506,7 @@ See the <a href="#sec_1_a_1_3">applied service level criteria</a> for more detai
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">calculate_service_level</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Function calculates the service level based on service level criteria.</span>
-<span class="sd">    The enumerated service level is calculted for a given row in a pandas dataframe/series.</span>
+<span class="sd">    The enumerated service level is calculated for a given row in a pandas dataframe/series.</span>
 <span class="sd">    An enumerated service level rank value is returned. </span>
 <span class="sd">    </span>
 <span class="sd">    Parameters:</span>
