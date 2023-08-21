@@ -16,9 +16,9 @@ This notebook provides an overview of the key methodology and criteria used by t
 
 ### View sample code in browser:
 
-1. [Code & documentation only](https://symmetrical-adventure-29vnp2w.pages.github.io/BEAD_Service_Level_Sample_Notebook_No_Output.html)
-1. [Notebook with results: Montana - BDC (07/25/23)](https://symmetrical-adventure-29vnp2w.pages.github.io/BEAD_Service_Level_Sample_Notebook(Montana).html)
-1. [Notebook with results: Pennsylvania - BDC (07/25/23)](https://symmetrical-adventure-29vnp2w.pages.github.io//BEAD_Service_Level_Sample_Notebook(Pennsylvania).html)
+1. [Code & documentation only](https://nbamgis.github.io/BEAD-Location-Max-Service-Level-Sample-Notebook/BEAD_Service_Level_Sample_Notebook_No_Output.html)
+1. [Notebook with results: Montana - BDC (07/25/23)](https://nbamgis.github.io/BEAD-Location-Max-Service-Level-Sample-Notebook/BEAD_Service_Level_Sample_Notebook(Montana).html)
+1. [Notebook with results: Pennsylvania - BDC (07/25/23)](https://nbamgis.github.io/BEAD-Location-Max-Service-Level-Sample-Notebook/BEAD_Service_Level_Sample_Notebook(Pennsylvania).html)
 
 ---
 
