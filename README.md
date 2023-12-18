@@ -36,7 +36,7 @@ This notebook can be run in Jupyter Notebooks or ArcGIS Pro without modification
 ### Python version:
    - Tested and developed with 3.7+.
      
-#### Python dependancies:
+#### Python dependencies:
    - pandas
 
 ---
